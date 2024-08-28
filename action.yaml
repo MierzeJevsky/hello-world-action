@@ -27,5 +27,5 @@ runs:
       run:  |
         name=${{ inputs.name }}
         lenght=${#name}
-        echo "name_lenght=$lenght" >> "$GITHUB_OUTPUTS"
+        echo "name_lenght=$lenght" >> "$GITHUB_OUTPUT"
       shell: bash
