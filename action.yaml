@@ -9,7 +9,7 @@ inputs:
     
 outputs:
   name_lenght:
-    describtion: Lenght of provided name
+    description: Lenght of provided name
     value: ${{steps.length_calculation.name_lenght }},
     
 runs:
