@@ -20,9 +20,12 @@ runs:
       NAME: ${{ inputs.name }}
     run:  |
       echo "Hello $NAME!"
+    shell: bash
+      
     - name: Count lenght
     id: lenght_calculation
     run:  |
       name=${{ inputs.name }}
       lenght=${#name}
       echo "name_lenght=$lenght" >> $GITHUB_OUTPUTS
+    shell: bash
